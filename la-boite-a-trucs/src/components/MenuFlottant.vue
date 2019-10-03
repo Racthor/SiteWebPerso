@@ -1,0 +1,1 @@
+<!-- Cette vue contiendra un menu flottant. Sous la forme d'un point, genre menu de jeux vidéo, tu clique, ça te déroule le menu tu reclique, ça enroule. -->

@@ -51,11 +51,8 @@
 <script>
 export default {
   name: 'page_cv',
-  el: '#cv',
-  props() {
-  	return {
+  props: {
     	intro: String
-    }
   },
   data() {
   	return {

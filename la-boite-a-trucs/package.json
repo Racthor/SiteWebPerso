@@ -8,14 +8,16 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "vue": "^2.5.21",
-    "vuex": "^3.0.1"
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.2",
+    "vue": "^2.6.10",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-unit-jest": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
-    "@vue/test-utils": "^1.0.0-beta.20",
-    "vue-template-compiler": "^2.5.21"
+    "@vue/cli-plugin-unit-jest": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "vue-template-compiler": "^2.6.10"
   },
   "postcss": {
     "plugins": {

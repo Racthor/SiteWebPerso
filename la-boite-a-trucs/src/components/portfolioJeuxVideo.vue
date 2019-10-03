@@ -8,11 +8,8 @@
 <script>
 export default {
   name: 'portfolioJeuxVideo',
-  el: '#header',
-  props() {
-  	return {
+  props: {
     	msg: String
-    }
   },
   data() {
   	return {
