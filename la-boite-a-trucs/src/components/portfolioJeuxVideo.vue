@@ -7,16 +7,15 @@
 
 <script>
 export default {
-  name: 'portfolioJeuxVideo',
-  props: {
-    	msg: String
-  },
-  data() {
-  	return {
-  		titre: 'La boite à trucs !'
-  	}
-  },
-
+	name: 'portfolioJeuxVideo',
+	props: {
+		msg: String
+	},
+	data() {
+		return {
+			titre: 'La boite à trucs !'
+		}
+	},
 }
 </script>
 
