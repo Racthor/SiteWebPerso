@@ -1,10 +1,10 @@
 <template>
 	<div class="cv">
-		<b-raw>
+		<b-row>
 			<h1>{{ titreCV }}</h1>
 			<p v-if="intro">{{ intro }}</p>
-		</b-raw>
-		<b-raw>
+		</b-row>
+		<b-row>
 			<section>
 				<h2>Compétences</h2>
 				<section>
@@ -32,31 +32,31 @@
 					</ul>
 				</section>
 			</section>
-		</b-raw>
-		<b-raw>
+		</b-row>
+		<b-row>
 			<section>
 				<h2>Expériences</h2>
 				<p></p>
 			</section>
-		</b-raw>
-		<b-raw>
+		</b-row>
+		<b-row>
 			<section>
 				<h2>Formations</h2>
 				<p></p>
 			</section>
-		</b-raw>
-		<b-raw>
+		</b-row>
+		<b-row>
 			<section>
 				<h2>Passions</h2>
 				<p></p>
 			</section>
-		</b-raw>
-		<b-raw>
+		</b-row>
+		<b-row>
 			<section>
 				<h2>Associations</h2>
 				<p></p>
 			</section>
-		</b-raw>
+		</b-row>
 	</div>
 </template>
 

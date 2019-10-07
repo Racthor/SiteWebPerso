@@ -18,7 +18,23 @@
 				<presentation/>
 			</div>
 			<div v-else>
-				<portfolioJeuxVideo msg="Bienvenue dans la boite à trucs ! Sur une idée originale de Anonimus"/>
+				<div>
+					<h3>Liste des projets</h3>
+					<b-card-group>
+						<b-card img-src="https://placekitten.com/1000/300" img-alt="Card image" img-top>
+							<b-card-text>
+								Some quick example text to build on the card and make up the bulk of the card's content.
+				        	</b-card-text>
+						</b-card>
+
+						<b-card img-src="https://placekitten.com/1000/300" img-alt="Card image" img-bottom>
+							<b-card-text>
+								Some quick example text to build on the card and make up the bulk of the card's content.
+							</b-card-text>
+						</b-card>
+					</b-card-group>
+				</div>
+				<portfolioJeuxVideo/>
 				<pagecv intro="Je recherche actuellement un emploi dans la domaine du jeu vidéo. Les informations pour me contacter sont disponible en bas de la page (TODO: mettre un lien)"/>
 			</div>
 		</b-row>
@@ -26,8 +42,8 @@
 </template>
 
 <script>
-import portfolioJeuxVideo from './portfolioJeuxVideo.vue'
-import pagecv from './pageCV.vue'
+import portfolioJeuxVideo from './PortfolioJeuxVideo.vue'
+import pagecv from './PageCV.vue'
 import presentation from './Presentation.vue'
 
 export default {
