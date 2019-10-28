@@ -2,7 +2,8 @@
 	<div class="portfolio">
 		<b-row>
 			<b-col>
-				<b-img class="headerprojet" :src="require('../assets/header_elya_by_morgan_chane.jpg')" fluid alt="Image Header"></b-img>
+				<!--<b-img class="headerprojet" :src="require('../assets/header_elya_by_morgan_chane.jpg')" fluid alt="Image Header"></b-img>-->
+				<p>{{ $route.params.idProjet }}</p>
 			</b-col>
 		</b-row>
 		<headerportfolio/>
