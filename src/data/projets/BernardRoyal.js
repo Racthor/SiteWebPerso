@@ -13,9 +13,6 @@ export default {
 		resume: "Bernard Royal est un jeu de vitesse dans lequel vous incarnez un bernard l'ermite qui doit survivre jusqu'à arriver à l'abri des rochers.",
 		illustrations: [
 			require('../../assets/illuProjets/BernardRoyal/illuBernardRoyal.png'),
-			require('../../assets/illuProjets/BernardRoyal/Neeko_0.jpg'),
-			require('../../assets/illuProjets/BernardRoyal/Shyvana_0.jpg'),
-			require('../../assets/illuProjets/BernardRoyal/Zoe_0.jpg'),
 		],
 		technos: [
 			"unity",
