@@ -1,19 +1,16 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <portfolioJeuxVideo msg="Bienvenue dans la boite à trucs ! Sur une idée originale de Anonimus"/>
-    <h2>Le titre fonctionne heureusement.</h2>
-  </div>
+	<div id="app">
+		<principale/>
+	</div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-import portfolioJeuxVideo from './components/portfolioJeuxVideo.vue'
+import principale from './components/Principale.vue'
 
 export default {
   name: 'app',
   components: {
-    portfolioJeuxVideo
+    principale
   }
 }
 </script>
@@ -23,8 +20,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
