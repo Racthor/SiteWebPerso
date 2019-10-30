@@ -1,38 +1,36 @@
 <template>
+	<b-card-group>
 	<!--TODO: check https://bootstrap-vue.js.org/docs/components/jumbotron-->
-	<b-row>
-		<b-col>
-			<h2>{{ titre }}</h2>
-			<h2>{{ durée }}</h2>
-			<h2>{{ date }}</h2>
-		</b-col>
-		<b-col>
-			<ul class="techno">
-				<!--TODO: liste des technos à récuperer dans vuex-->
-				<li><b-img></b-img></li>
-			</ul>
-		</b-col>
-		<b-col>
-			<p>Liste de lien vers les sources, git etc</p>
-		</b-col>
-	</b-row>
+		<b-card :title="details.titre" :sub-title="details.date">
+			<b-card-text>Le projet a été terminer sur une période de {{ details.duree }}</b-card-text>
+			<b-link :href="links.plateforme">{{ links.nom }}</b-link>
+		</b-card>
+		<b-card sub-title="Technologies principale utilisées">
+			<b-card-img right class="techIcon" v-for="nom in technos" :src="getIcon(nom)" height="100" width="100"></b-card-img>
+		</b-card>
+	</b-card-group>
 </template>
 
 <script>
+import store from '../../store'
+
 export default {
 	name: 'headerportfolio',
 	props: {
-		msg: String
+		details: Object,
+		links: Object,
+		technos: Array
 	},
-	data() {
-		return {
-			titre: 'La boite à trucs !',
-			durée: '1mois',
-			date: '13/07/2016'
+	methods: {
+		getIcon (nomTechno) {
+			return store.getIcon(nomTechno)
 		}
 	}
 }
 </script>
 
 <style>
+.techIcon {
+	width: auto;
+}
 </style>

@@ -1,38 +1,32 @@
 <template>
 	<div class="portfolio">
-		<b-row>
-			<b-col>
-				<!--<b-img class="headerprojet" :src="require('../assets/header_elya_by_morgan_chane.jpg')" fluid alt="Image Header"></b-img>-->
-				<p>{{ $route.params.idProjet }}</p>
-			</b-col>
-		</b-row>
-		<headerportfolio/>
-		<contenuportfolio/>
+		<imagesDuProjet :illustrations="projet.illustrations"/>
+		<headerportfolio :details="projet.details" :links="projet.lien" :technos="projet.technos"/>
+		<contenuportfolio :projet="projet"/>
 		<tagslist/>
 		<!--<previous-next/>-->
 	</div>
 </template>
 
 <script>
+import imagesDuProjet from './composantPortfolio/ImagesDuProjet.vue'
 import headerportfolio from './composantPortfolio/HeaderPortfolio.vue'
 import contenuportfolio from './composantPortfolio/ContenuPortfolio.vue'
 import tagslist from './Tagslist.vue'
-//import previous-next from './PreviousNext.vue'
+//import previous-next from './PreviousNext.vue' //<- https://bootstrap-vue.js.org/docs/components/button-toolbar
+
+import store from '../store'
 
 export default {
-	//TODO: le contenu du projet doit être récupérer ici puis envoyer dans les composant enfant. ces derniers ne doivent pas connaitre ce qu'ils affichent.
 	name: 'portfolioJeuxVideo',
-	props: {
-		projet: Object,		//contient le titre, la date et la durée du projet
-		technos: Array,	//liste des technos pour headerportfolio
-		tags: Array			//liste des tags lié au projet
-	},
 	data() {
 		return {
-			titre: 'La boite à trucs !'
+			titre: 'La boite à trucs !',
+			projet: store.getProjetByName(this.$route.params.idProjet)
 		}
 	},
 	components: {
+		imagesDuProjet,
 		headerportfolio,
 		contenuportfolio,
 		tagslist,

@@ -5,13 +5,22 @@ import Projets from './data/listeProjets.js'
 //Vue.use(Vuex)
 var store = {
 	state: {
-		listeProjets: Projets()
+		listeProjets: Projets(),
+		icones: {
+			unity: require('./assets/icones/unityIcon.jpg'),
+			vuejs: require('./assets/icones/logoVueJs.png'),
+		}
 	},
 	getProjets () {
+		console.log(this.state.listeProjets)
 		return this.state.listeProjets;
 	},
-	getProjet (nomProjet) {
+	getProjetByName (nomProjet) {
+		console.log(this.state.listeProjets)
 		return this.state.listeProjets[nomProjet];
+	},
+	getIcon (nomTechno) {
+		return this.state.icones[nomTechno];
 	}
 }
 export default store

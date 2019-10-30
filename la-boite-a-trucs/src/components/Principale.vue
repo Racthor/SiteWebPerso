@@ -2,9 +2,7 @@
 <template>
 	<b-container>
 		<menuFlottant></menuFlottant>
-		<b-row>
-			<router-view></router-view>
-		</b-row>
+		<router-view></router-view>
 	</b-container>
 </template>
 
