@@ -1,5 +1,5 @@
 // Load the http module to create an http server.
-const http = require('http');
+/*const http = require('http');
 const fs = require('fs');
 
 const handleRequest = (request, response) => {
@@ -22,4 +22,23 @@ const server = http.createServer(handleRequest);
 
 // Last, but not least, listen on port 8080
 // The environment variable PORT is automatically defined and equals to 8080
-server.listen(process.env.PORT, '0.0.0.0');
+server.listen(process.env.PORT, '0.0.0.0');*/
+const http = require('http')
+const fs = require('fs')
+const httpPort = 8080
+
+http.createServer((req, res) => {
+  fs.readFile('./dist/index.html', 'utf-8', (err, content) => {
+    if (err) {
+      console.log('We cannot open "./dist/index.html" file.')
+    }
+
+    res.writeHead(200, {
+      'Content-Type': 'text/html; charset=utf-8'
+    })
+
+    res.end(content)
+  })
+}).listen(httpPort, () => {
+  console.log('Server listening on: http://localhost:%s', httpPort)
+})
