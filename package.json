@@ -2,9 +2,9 @@
   "name": "la-boite-a-trucs",
   "version": "0.1.0",
   "private": false,
-  "main": "./node_serve.js",
   "scripts": {
-    "serve": "node_serve.js",
+    "start": "serve -s dist",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit"
   },
