@@ -1,26 +1,21 @@
 # la-boite-a-trucs
 
-La boite à trucs est le nom de code de mon site portfolio. J'y répertorie différents projets pour lesquels j'ai travaillé, ainsi que mon cv, en ligne et en pdf.
-
-Le projet est développé avec Vue.js par l'intermédiaire de Vue CLI 3.
-J'utilise BootstrapVue pour le CSS et le responsive.
-
-## Installation du projet
+## Project setup
 ```
 npm install
 ```
 
-### Compilation et lancement d'un serveur local
+### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compilation et minification pour mise en production
+### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Lancer les tests
+### Run your tests
 ```
 npm run test
 ```
@@ -30,7 +25,16 @@ npm run test
 npm run lint
 ```
 
-### Lancer les tests unitaire
+### Run your unit tests
 ```
 npm run test:unit
 ```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## TODO
+
+Changer le format des images pour atteindre 244 KiB max par image
+
+Récupérer les images des projets dynamiquement

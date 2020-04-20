@@ -1,9 +1,8 @@
 {
   "name": "la-boite-a-trucs",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "scripts": {
-    "start": "serve -s dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit"
